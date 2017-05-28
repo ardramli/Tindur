@@ -18,6 +18,11 @@ class ViewController: UIViewController {
     
     var users = [User]()
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fetchUser()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -101,7 +106,7 @@ class ViewController: UIViewController {
     }
     
     func fetchUser() {
-        Database.database().reference().child("users").observe(.childAdded, with: { (snapshot) in
+        Database.database().reference().child("users").child("female").observe(.childAdded, with: { (snapshot) in
             
             if let dictionary = snapshot.value as? [String: Any] {
                 let user = User()
