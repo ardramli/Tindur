@@ -17,6 +17,7 @@
 		CE6BFEC11EDA94AA00664048 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BFEC01EDA94AA00664048 /* MyProfileViewController.swift */; };
 		CE6BFEC41EDA996E00664048 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BFEC31EDA996E00664048 /* User.swift */; };
 		CE922D971ED941A0004F0A04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE922D961ED9419F004F0A04 /* GoogleService-Info.plist */; };
+		CEEA6E3D1EDB04CA005D05DB /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEA6E3C1EDB04CA005D05DB /* ImageLoader.swift */; };
 		D651E63E03DC920107E4922E /* Pods_Tindur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C62A4BD283253905CBD236D /* Pods_Tindur.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		CE6BFEC01EDA94AA00664048 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		CE6BFEC31EDA996E00664048 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE922D961ED9419F004F0A04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEEA6E3C1EDB04CA005D05DB /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		E32A53086DF460C8BA629D18 /* Pods-Tindur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tindur.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tindur/Pods-Tindur.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 				CE33E09F1ED8DCA6006054CB /* Main.storyboard */,
 				CE6BFEC31EDA996E00664048 /* User.swift */,
 				CE6BFEC01EDA94AA00664048 /* MyProfileViewController.swift */,
+				CEEA6E3C1EDB04CA005D05DB /* ImageLoader.swift */,
 				CE33E0A21ED8DCA6006054CB /* Assets.xcassets */,
 				CE33E0A41ED8DCA6006054CB /* LaunchScreen.storyboard */,
 				CE33E0A71ED8DCA7006054CB /* Info.plist */,
@@ -231,6 +234,7 @@
 			files = (
 				CE33E0B21ED8EF21006054CB /* LoginViewController.swift in Sources */,
 				CE33E09E1ED8DCA6006054CB /* ViewController.swift in Sources */,
+				CEEA6E3D1EDB04CA005D05DB /* ImageLoader.swift in Sources */,
 				CE6BFEC11EDA94AA00664048 /* MyProfileViewController.swift in Sources */,
 				CE6BFEC41EDA996E00664048 /* User.swift in Sources */,
 				CE33E09C1ED8DCA6006054CB /* AppDelegate.swift in Sources */,

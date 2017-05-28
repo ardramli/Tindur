@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     private var count = 0
     
     var users = [User]()
+    var imageURL : String?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -33,10 +34,11 @@ class ViewController: UIViewController {
          * You can use DMSwipeCardsView though with any custom class.
          */
         
-        let viewGenerator: (String, CGRect) -> (UIView) = { (element: String, frame: CGRect) -> (UIView) in
+        let viewGenerator: (User, CGRect) -> (UIView) = { (element: User, frame: CGRect) -> (UIView) in
             let container = UIView(frame: CGRect(x: 15, y: 20, width: frame.width - 60, height: frame.height - 40))
             let cardImageView = UIImageView(frame: container.bounds)
-            cardImageView.image = #imageLiteral(resourceName: "cards_2")
+            
+            cardImageView.loadImageUsingCacheWithUrlString(urlString: element.profileImageUrl!)
             cardImageView.center = container.center
             cardImageView.clipsToBounds = true
             cardImageView.layer.cornerRadius = 16
@@ -77,7 +79,7 @@ class ViewController: UIViewController {
         }
         
         let frame = CGRect(x: 0, y: 80, width: self.view.frame.width, height: self.view.frame.height - 160)
-        swipeView = DMSwipeCardsView<String>(frame: frame,
+        swipeView = DMSwipeCardsView<User>(frame: frame,
                                              viewGenerator: viewGenerator,
                                              overlayGenerator: overlayGenerator)
         swipeView.delegate = self
@@ -95,12 +97,12 @@ class ViewController: UIViewController {
     func buttonTapped() {
         let ac = UIAlertController(title: "Load on top / on bottom?", message: nil, preferredStyle: .actionSheet)
         ac.addAction(UIAlertAction(title: "On Top", style: .default, handler: { (a: UIAlertAction) in
-            self.swipeView.addCards((self.count...(self.count+10)).map({"\($0)"}), onTop: true)
-            self.count = self.count + 10
+            self.swipeView.addCards((self.count...(self.count+8)).map({"\($0)"}), onTop: true)
+            self.count = self.count + 8
         }))
         ac.addAction(UIAlertAction(title: "On Bottom", style: .default, handler: { (a: UIAlertAction) in
-            self.swipeView.addCards((self.count...(self.count+10)).map({"\($0)"}), onTop: false)
-            self.count = self.count + 10
+            self.swipeView.addCards((self.count...(self.count+8)).map({"\($0)"}), onTop: false)
+            self.count = self.count + 8
         }))
         self.present(ac, animated: true, completion: nil)
     }
