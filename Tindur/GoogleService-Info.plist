@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>67858240709-ig1b1f1j6h1r1crb65m2mrk05r9tmvf7.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.67858240709-ig1b1f1j6h1r1crb65m2mrk05r9tmvf7</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAiMzVw5zh0XbwGiR3ELW8VvecVtR5e8ck</string>
+	<key>GCM_SENDER_ID</key>
+	<string>67858240709</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.ardramli.Tindur</string>
+	<key>PROJECT_ID</key>
+	<string>tindur-dd697</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tindur-dd697.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:67858240709:ios:8b6c0dcfd9eb334d</string>
+	<key>DATABASE_URL</key>
+	<string>https://tindur-dd697.firebaseio.com</string>
+</dict>
+</plist>

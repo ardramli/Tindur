@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE33E09C1ED8DCA6006054CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33E09B1ED8DCA6006054CB /* AppDelegate.swift */; };
+		CE33E09E1ED8DCA6006054CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33E09D1ED8DCA6006054CB /* ViewController.swift */; };
+		CE33E0A11ED8DCA6006054CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE33E09F1ED8DCA6006054CB /* Main.storyboard */; };
+		CE33E0A31ED8DCA6006054CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE33E0A21ED8DCA6006054CB /* Assets.xcassets */; };
+		CE33E0A61ED8DCA6006054CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE33E0A41ED8DCA6006054CB /* LaunchScreen.storyboard */; };
+		CE33E0B01ED8EDA7006054CB /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE33E0AF1ED8EDA7006054CB /* Auth.storyboard */; };
+		CE33E0B21ED8EF21006054CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33E0B11ED8EF21006054CB /* LoginViewController.swift */; };
+		CE6BFEC11EDA94AA00664048 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BFEC01EDA94AA00664048 /* MyProfileViewController.swift */; };
+		CE6BFEC41EDA996E00664048 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BFEC31EDA996E00664048 /* User.swift */; };
+		CE922D971ED941A0004F0A04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE922D961ED9419F004F0A04 /* GoogleService-Info.plist */; };
+		D651E63E03DC920107E4922E /* Pods_Tindur.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C62A4BD283253905CBD236D /* Pods_Tindur.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8C62A4BD283253905CBD236D /* Pods_Tindur.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tindur.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A446A6C415820019CCEE7C13 /* Pods-Tindur.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tindur.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tindur/Pods-Tindur.release.xcconfig"; sourceTree = "<group>"; };
+		CE33E0981ED8DCA6006054CB /* Tindur.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tindur.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE33E09B1ED8DCA6006054CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE33E09D1ED8DCA6006054CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE33E0A01ED8DCA6006054CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE33E0A21ED8DCA6006054CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE33E0A51ED8DCA6006054CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE33E0A71ED8DCA7006054CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE33E0AF1ED8EDA7006054CB /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		CE33E0B11ED8EF21006054CB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE6BFEC01EDA94AA00664048 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
+		CE6BFEC31EDA996E00664048 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE922D961ED9419F004F0A04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E32A53086DF460C8BA629D18 /* Pods-Tindur.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tindur.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tindur/Pods-Tindur.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE33E0951ED8DCA6006054CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D651E63E03DC920107E4922E /* Pods_Tindur.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50EE39B3616D109CD7ADE01F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E32A53086DF460C8BA629D18 /* Pods-Tindur.debug.xcconfig */,
+				A446A6C415820019CCEE7C13 /* Pods-Tindur.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8398957E28CDF8BB6A53A820 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C62A4BD283253905CBD236D /* Pods_Tindur.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE33E08F1ED8DCA6006054CB = {
+			isa = PBXGroup;
+			children = (
+				CE33E09A1ED8DCA6006054CB /* Tindur */,
+				CE33E0991ED8DCA6006054CB /* Products */,
+				50EE39B3616D109CD7ADE01F /* Pods */,
+				8398957E28CDF8BB6A53A820 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE33E0991ED8DCA6006054CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE33E0981ED8DCA6006054CB /* Tindur.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE33E09A1ED8DCA6006054CB /* Tindur */ = {
+			isa = PBXGroup;
+			children = (
+				CE33E09B1ED8DCA6006054CB /* AppDelegate.swift */,
+				CE33E09D1ED8DCA6006054CB /* ViewController.swift */,
+				CE33E0AF1ED8EDA7006054CB /* Auth.storyboard */,
+				CE33E0B11ED8EF21006054CB /* LoginViewController.swift */,
+				CE33E09F1ED8DCA6006054CB /* Main.storyboard */,
+				CE6BFEC31EDA996E00664048 /* User.swift */,
+				CE6BFEC01EDA94AA00664048 /* MyProfileViewController.swift */,
+				CE33E0A21ED8DCA6006054CB /* Assets.xcassets */,
+				CE33E0A41ED8DCA6006054CB /* LaunchScreen.storyboard */,
+				CE33E0A71ED8DCA7006054CB /* Info.plist */,
+				CE922D961ED9419F004F0A04 /* GoogleService-Info.plist */,
+			);
+			path = Tindur;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE33E0971ED8DCA6006054CB /* Tindur */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE33E0AA1ED8DCA7006054CB /* Build configuration list for PBXNativeTarget "Tindur" */;
+			buildPhases = (
+				28FA5892F9529F8B4B5B0A28 /* [CP] Check Pods Manifest.lock */,
+				CE33E0941ED8DCA6006054CB /* Sources */,
+				CE33E0951ED8DCA6006054CB /* Frameworks */,
+				CE33E0961ED8DCA6006054CB /* Resources */,
+				8FD1735B4931186611EFD574 /* [CP] Embed Pods Frameworks */,
+				03A78E7DDFC25652DAA398ED /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tindur;
+			productName = Tindur;
+			productReference = CE33E0981ED8DCA6006054CB /* Tindur.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE33E0901ED8DCA6006054CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ardMac;
+				TargetAttributes = {
+					CE33E0971ED8DCA6006054CB = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = ZQ547JDPVM;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = CE33E0931ED8DCA6006054CB /* Build configuration list for PBXProject "Tindur" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE33E08F1ED8DCA6006054CB;
+			productRefGroup = CE33E0991ED8DCA6006054CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE33E0971ED8DCA6006054CB /* Tindur */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE33E0961ED8DCA6006054CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE33E0A61ED8DCA6006054CB /* LaunchScreen.storyboard in Resources */,
+				CE33E0B01ED8EDA7006054CB /* Auth.storyboard in Resources */,
+				CE922D971ED941A0004F0A04 /* GoogleService-Info.plist in Resources */,
+				CE33E0A31ED8DCA6006054CB /* Assets.xcassets in Resources */,
+				CE33E0A11ED8DCA6006054CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03A78E7DDFC25652DAA398ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tindur/Pods-Tindur-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28FA5892F9529F8B4B5B0A28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8FD1735B4931186611EFD574 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tindur/Pods-Tindur-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE33E0941ED8DCA6006054CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE33E0B21ED8EF21006054CB /* LoginViewController.swift in Sources */,
+				CE33E09E1ED8DCA6006054CB /* ViewController.swift in Sources */,
+				CE6BFEC11EDA94AA00664048 /* MyProfileViewController.swift in Sources */,
+				CE6BFEC41EDA996E00664048 /* User.swift in Sources */,
+				CE33E09C1ED8DCA6006054CB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE33E09F1ED8DCA6006054CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE33E0A01ED8DCA6006054CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE33E0A41ED8DCA6006054CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE33E0A51ED8DCA6006054CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE33E0A81ED8DCA7006054CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE33E0A91ED8DCA7006054CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE33E0AB1ED8DCA7006054CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E32A53086DF460C8BA629D18 /* Pods-Tindur.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZQ547JDPVM;
+				INFOPLIST_FILE = Tindur/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ardramli.Tindur;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CE33E0AC1ED8DCA7006054CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A446A6C415820019CCEE7C13 /* Pods-Tindur.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZQ547JDPVM;
+				INFOPLIST_FILE = Tindur/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ardramli.Tindur;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE33E0931ED8DCA6006054CB /* Build configuration list for PBXProject "Tindur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE33E0A81ED8DCA7006054CB /* Debug */,
+				CE33E0A91ED8DCA7006054CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE33E0AA1ED8DCA7006054CB /* Build configuration list for PBXNativeTarget "Tindur" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE33E0AB1ED8DCA7006054CB /* Debug */,
+				CE33E0AC1ED8DCA7006054CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE33E0901ED8DCA6006054CB /* Project object */;
+}
