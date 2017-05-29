@@ -16,6 +16,7 @@
 		CE33E0B21ED8EF21006054CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33E0B11ED8EF21006054CB /* LoginViewController.swift */; };
 		CE346D8D1EDC4F960067F090 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE346D8C1EDC4F960067F090 /* ProfileViewController.swift */; };
 		CE346D8F1EDC56BE0067F090 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE346D8E1EDC56BE0067F090 /* GradientButton.swift */; };
+		CE346D941EDC61D90067F090 /* AlertHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE346D931EDC61D90067F090 /* AlertHelper.swift */; };
 		CE3D1FDB1EDBFE6A009E5103 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D1FDA1EDBFE6A009E5103 /* EditProfileViewController.swift */; };
 		CE6BFEC11EDA94AA00664048 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BFEC01EDA94AA00664048 /* MyProfileViewController.swift */; };
 		CE6BFEC41EDA996E00664048 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BFEC31EDA996E00664048 /* User.swift */; };
@@ -38,6 +39,7 @@
 		CE33E0B11ED8EF21006054CB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE346D8C1EDC4F960067F090 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CE346D8E1EDC56BE0067F090 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		CE346D931EDC61D90067F090 /* AlertHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertHelper.swift; sourceTree = "<group>"; };
 		CE3D1FDA1EDBFE6A009E5103 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		CE6BFEC01EDA94AA00664048 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		CE6BFEC31EDA996E00664048 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		CE346D921EDC59850067F090 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				CE346D931EDC61D90067F090 /* AlertHelper.swift */,
 				CE346D8E1EDC56BE0067F090 /* GradientButton.swift */,
 				CE6BFEC31EDA996E00664048 /* User.swift */,
 				CEEA6E3C1EDB04CA005D05DB /* ImageLoader.swift */,
@@ -273,6 +276,7 @@
 				CE6BFEC41EDA996E00664048 /* User.swift in Sources */,
 				CE33E09C1ED8DCA6006054CB /* AppDelegate.swift in Sources */,
 				CE346D8D1EDC4F960067F090 /* ProfileViewController.swift in Sources */,
+				CE346D941EDC61D90067F090 /* AlertHelper.swift in Sources */,
 				CE3D1FDB1EDBFE6A009E5103 /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

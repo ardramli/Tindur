@@ -121,6 +121,7 @@ class ViewController: UIViewController {
                 
                 if snapshot.key == Auth.auth().currentUser!.uid {
                     Database.database().reference().child("matches").child("\(self.users[index].id!) - \(Auth.auth().currentUser!.uid)").updateChildValues(["1": true])
+                    self.warningPopUp(withTitle: "It's a MATCH!", withMessage: "Now you guys can talk")
                 }
             }, withCancel: nil)
     }

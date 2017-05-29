@@ -37,7 +37,7 @@ class EditProfileViewController: UIViewController {
         if let id = authUser?.uid {
             currentUserID = id
         }
-        
+        setupView()
     }
     
     func saveButtonTapped(){
@@ -50,6 +50,13 @@ class EditProfileViewController: UIViewController {
     func setupView(){
         ref.child("users").child("male").child(currentUserID).observe(.value, with: { (snapshot) in
             print(snapshot)
+            
+            let dictionary = snapshot.value as? [String: Any]
+            let currentProfileUser = User(withAnId: (snapshot.key), anEmail: (dictionary?["email"])! as! String, aName: (dictionary?["name"])! as! String, aBio: (dictionary?["bio"])! as! String, aProfileImageURL: (dictionary?["photoURL"])! as! String)
+            
+            self.profileImageView.loadImageUsingCacheWithUrlString(urlString: currentProfileUser.profileImageUrl!)
+            self.nameTextField.text = currentProfileUser.name
+            self.bioTextView.text = currentProfileUser.bio
             
         }, withCancel: nil)
         
