@@ -49,7 +49,7 @@ class MyProfileViewController: UIViewController {
             
             let dictionary = snapshot.value as? [String: Any]
             
-            let currentProfileUser = User(withAnId: snapshot.key, anEmail: (dictionary?["email"])! as! String, aName: (dictionary?["name"])! as! String, aDesc: "", aProfileImageURL: (dictionary?["photoURL"])! as! String)
+            let currentProfileUser = User(withAnId: snapshot.key, anEmail: (dictionary?["email"])! as! String, aName: (dictionary?["name"])! as! String, aBio: "", aProfileImageURL: (dictionary?["photoURL"])! as! String)
             
             
             

@@ -15,23 +15,29 @@ class User {
     var id: String?
     var email : String?
     var name : String?
-    var desc : String?
+    var bio : String?
     var profileImageUrl : String?
+//    var preference : String?
+//    var gender : String?
     
-    init( ) {
+    
+    init() {
         id = ""
         email = ""
         name = ""
-        desc = ""
+        bio = ""
         profileImageUrl = ""
+//        preference = ""
+//        gender = ""
     }
     
-    init(withAnId : String, anEmail : String, aName : String, aDesc : String, aProfileImageURL : String) {
+    init(withAnId : String, anEmail : String, aName : String, aBio : String, aProfileImageURL : String) {
         id = withAnId
         email = anEmail
         name = aName
-        desc = aDesc
+        bio = aBio
         profileImageUrl = aProfileImageURL
-        
+//        preference = aPreference
+//        gender = aGender
     }
 }
