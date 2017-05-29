@@ -14,6 +14,8 @@
 		CE33E0A61ED8DCA6006054CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE33E0A41ED8DCA6006054CB /* LaunchScreen.storyboard */; };
 		CE33E0B01ED8EDA7006054CB /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE33E0AF1ED8EDA7006054CB /* Auth.storyboard */; };
 		CE33E0B21ED8EF21006054CB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33E0B11ED8EF21006054CB /* LoginViewController.swift */; };
+		CE346D8D1EDC4F960067F090 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE346D8C1EDC4F960067F090 /* ProfileViewController.swift */; };
+		CE346D8F1EDC56BE0067F090 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE346D8E1EDC56BE0067F090 /* GradientButton.swift */; };
 		CE3D1FDB1EDBFE6A009E5103 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3D1FDA1EDBFE6A009E5103 /* EditProfileViewController.swift */; };
 		CE6BFEC11EDA94AA00664048 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BFEC01EDA94AA00664048 /* MyProfileViewController.swift */; };
 		CE6BFEC41EDA996E00664048 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6BFEC31EDA996E00664048 /* User.swift */; };
@@ -34,6 +36,8 @@
 		CE33E0A71ED8DCA7006054CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE33E0AF1ED8EDA7006054CB /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		CE33E0B11ED8EF21006054CB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE346D8C1EDC4F960067F090 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CE346D8E1EDC56BE0067F090 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		CE3D1FDA1EDBFE6A009E5103 /* EditProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		CE6BFEC01EDA94AA00664048 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		CE6BFEC31EDA996E00664048 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -93,20 +97,46 @@
 			isa = PBXGroup;
 			children = (
 				CE33E09B1ED8DCA6006054CB /* AppDelegate.swift */,
-				CE33E09D1ED8DCA6006054CB /* ViewController.swift */,
-				CE33E0AF1ED8EDA7006054CB /* Auth.storyboard */,
-				CE33E0B11ED8EF21006054CB /* LoginViewController.swift */,
+				CE346D901EDC579B0067F090 /* Auth */,
+				CE346D911EDC59760067F090 /* Views */,
+				CE346D921EDC59850067F090 /* Helpers */,
 				CE33E09F1ED8DCA6006054CB /* Main.storyboard */,
-				CE3D1FDA1EDBFE6A009E5103 /* EditProfileViewController.swift */,
-				CE6BFEC31EDA996E00664048 /* User.swift */,
-				CE6BFEC01EDA94AA00664048 /* MyProfileViewController.swift */,
-				CEEA6E3C1EDB04CA005D05DB /* ImageLoader.swift */,
 				CE33E0A21ED8DCA6006054CB /* Assets.xcassets */,
 				CE33E0A41ED8DCA6006054CB /* LaunchScreen.storyboard */,
 				CE33E0A71ED8DCA7006054CB /* Info.plist */,
 				CE922D961ED9419F004F0A04 /* GoogleService-Info.plist */,
 			);
 			path = Tindur;
+			sourceTree = "<group>";
+		};
+		CE346D901EDC579B0067F090 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				CE33E0AF1ED8EDA7006054CB /* Auth.storyboard */,
+				CE33E0B11ED8EF21006054CB /* LoginViewController.swift */,
+			);
+			name = Auth;
+			sourceTree = "<group>";
+		};
+		CE346D911EDC59760067F090 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE33E09D1ED8DCA6006054CB /* ViewController.swift */,
+				CE346D8C1EDC4F960067F090 /* ProfileViewController.swift */,
+				CE3D1FDA1EDBFE6A009E5103 /* EditProfileViewController.swift */,
+				CE6BFEC01EDA94AA00664048 /* MyProfileViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CE346D921EDC59850067F090 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CE346D8E1EDC56BE0067F090 /* GradientButton.swift */,
+				CE6BFEC31EDA996E00664048 /* User.swift */,
+				CEEA6E3C1EDB04CA005D05DB /* ImageLoader.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +269,10 @@
 				CE33E09E1ED8DCA6006054CB /* ViewController.swift in Sources */,
 				CEEA6E3D1EDB04CA005D05DB /* ImageLoader.swift in Sources */,
 				CE6BFEC11EDA94AA00664048 /* MyProfileViewController.swift in Sources */,
+				CE346D8F1EDC56BE0067F090 /* GradientButton.swift in Sources */,
 				CE6BFEC41EDA996E00664048 /* User.swift in Sources */,
 				CE33E09C1ED8DCA6006054CB /* AppDelegate.swift in Sources */,
+				CE346D8D1EDC4F960067F090 /* ProfileViewController.swift in Sources */,
 				CE3D1FDB1EDBFE6A009E5103 /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

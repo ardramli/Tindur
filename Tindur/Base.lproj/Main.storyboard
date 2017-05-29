@@ -24,12 +24,21 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="wda-H5-sa1">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="rFH-my-Xp6">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" image="user" id="rFH-my-Xp6">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <segue destination="wua-iE-Xf5" kind="show" id="1VI-P2-FjB"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="y4c-QX-iIr"/>
+                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SSW-a2-st6">
+                            <rect key="frame" x="121" y="10" width="78" height="24"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="tinderLogo"/>
+                        </button>
+                        <barButtonItem key="rightBarButtonItem" image="chat" id="y4c-QX-iIr">
+                            <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -100,10 +109,10 @@
             </objects>
             <point key="canvasLocation" x="302" y="35"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="0Rr-Xa-iXn">
             <objects>
-                <viewController id="LVx-V4-MZS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LVx-V4-MZS" customClass="ProfileViewController" customModule="Tindur" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HDD-ir-JSx"/>
                         <viewControllerLayoutGuide type="bottom" id="bFX-yg-Cjh"/>
@@ -160,10 +169,14 @@
                             <constraint firstItem="fHg-4B-E3x" firstAttribute="top" secondItem="eBI-fA-WZ5" secondAttribute="top" id="tra-ks-yr1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="KAW-jt-xxt" id="XhV-Vl-mC5"/>
+                        <outlet property="nameLabel" destination="gHf-ld-BAE" id="D85-2c-DGs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRb-oR-c97" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2012" y="-662"/>
+            <point key="canvasLocation" x="1599" y="-662"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vhf-2L-KyP">
@@ -316,7 +329,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chat" width="24" height="24"/>
         <image name="edit_info" width="32" height="32"/>
         <image name="settings" width="32" height="32"/>
+        <image name="tinderLogo" width="24" height="24"/>
+        <image name="user" width="24" height="24"/>
     </resources>
 </document>
