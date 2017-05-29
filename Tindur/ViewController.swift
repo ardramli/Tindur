@@ -18,15 +18,16 @@ class ViewController: UIViewController {
     var users = [User]()
     var currentUser = User()
     var imageURL : String?
+    var currentUserTapped = User()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        fetchUser()
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        fetchUser()
     }
     
     func setupCardView(){
@@ -147,6 +148,25 @@ extension ViewController: DMSwipeCardsViewDelegate {
     
     func cardTapped(_ object: Any) {
         print("Tapped on: \(object)")
+        let index = (object as AnyObject).integerValue
+        
+        Database.database().reference().child("users").child("female").child(users[index!].id!).observe(.value, with: { (snapshot) in
+            print(snapshot)
+            if let dictionary = snapshot.value as? [String: Any] {
+                let user = User()
+                user.id = snapshot.key
+                
+                let currentProfileTapped = User(withAnId: snapshot.key, anEmail: (dictionary["email"])! as! String, aName: (dictionary["name"])! as! String, aBio: "", aProfileImageURL: (dictionary["photoURL"])! as! String)
+                self.currentUserTapped = currentProfileTapped
+                let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                guard let controller = storyboard .instantiateViewController(withIdentifier: "ProfileViewController") as?
+                    ProfileViewController else { return }
+                controller.currentUserTapped = self.currentUserTapped
+                self.navigationController?.pushViewController(controller, animated: true)
+            }
+        }, withCancel: nil)
+        
+        
     }
     
     func reachedEndOfStack() {

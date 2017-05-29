@@ -12,10 +12,12 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
 
+    var currentUserTapped = User()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imageView.loadImageUsingCacheWithUrlString(urlString: currentUserTapped.profileImageUrl!)
+        nameLabel.text = currentUserTapped.name
     }
     
     
