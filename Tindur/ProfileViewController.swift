@@ -11,6 +11,11 @@ import UIKit
 class ProfileViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var bioTextView: UITextView!{
+        didSet{
+            bioTextView.isUserInteractionEnabled = false
+        }
+    }
 
     var currentUserTapped = User()
     override func viewDidLoad() {
